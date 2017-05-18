@@ -35,7 +35,24 @@ from runner.koan import *
 
 def score(dice):
     # You need to write this method
-    pass
+    m = {}
+    for sc in dice:
+        if sc in m:
+            m[sc] += 1
+        else:
+            m[sc] = 1
+    result = 0
+    for key in m.keys():
+        if m[key] >= 3:
+            if key == 1:
+                result += (1000 * (m[key] / 3) + 100 * (m[key] % 3))
+            else:
+                result += (100 * key * (m[key] / 3) + 10 * key * (m[key] % 3))
+        elif key == 1:
+            result += 100 * m[key]
+        elif key == 5:
+            result += 50 * m[key]
+    return result
 
 
 class AboutScoringProject(Koan):
