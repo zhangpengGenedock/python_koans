@@ -20,8 +20,8 @@
 #koans.about_lambdas.AboutLambdas
 #koans.about_scoring_project.AboutScoringProject
 #koans.about_classes.AboutClasses
-koans.about_new_style_classes.AboutNewStyleClasses
-#koans.about_with_statements.AboutWithStatements
+#koans.about_new_style_classes.AboutNewStyleClasses
+koans.about_with_statements.AboutWithStatements
 #koans.about_monkey_patching.AboutMonkeyPatching
 #koans.about_dice_project.AboutDiceProject
 #koans.about_method_bindings.AboutMethodBindings
